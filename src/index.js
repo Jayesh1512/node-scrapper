@@ -72,7 +72,7 @@ const scrapeInstagram = async (profileUrl) => {
 
   const descElement = $("header").find("span._ap3a");
   const desc = descElement.length ? descElement.text().trim() : "";
-  const decL = desc.length / 2;
+  const decL = desc.length ;
 
   const profileImageExists = $("._aagu").length > 0;
   const privateAcc = profileImageExists ? 0 : 1;
@@ -87,7 +87,7 @@ const scrapeInstagram = async (profileUrl) => {
     nplu,
     wordCount,
     nplfn,
-    decL,
+    // decL,
     privateAcc,
     posts,
     followers,
